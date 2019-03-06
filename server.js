@@ -15,4 +15,9 @@ server.post("/vote", (req, res) => {
     res.send("OK")
 })
 
+server.get("/votes", (req, res) => {
+    res.send(glasovi)
+})
+
+
 server.listen(4000)
